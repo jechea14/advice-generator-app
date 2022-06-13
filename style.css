@@ -1,0 +1,90 @@
+:root {
+    /* ### Primary */
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+
+    /* ### Neutral */
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.container {
+
+    background-color: var(--dark-grayish-blue);
+    padding: 1.25rem 0 4rem 0;
+    border-radius: 1.25rem;
+    position: relative;
+}
+
+.advice-title {
+    color: var(--neon-green);
+    font-size: 0.8rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.btn {
+    border-radius: 50%;
+    border: none;
+    background-color: var(--neon-green);
+    cursor: pointer;
+    padding: 1.25rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2rem;
+}
+
+.dice {
+    height: 20px;
+    width: 20px;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 25px 3px var(--neon-green);
+}
+
+.advice {
+    color: var(--light-cyan);
+    margin: 2rem 2rem;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+}
+
+.attribution a {
+    color: gray;
+}
+
+@media (min-width: 500px) {
+    .container {
+        max-width: 550px;
+    }
+}
